@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <div class="slideshow-container"> <!--Grupo para añadir el slider-->
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="IMG_CUESTIONARIO_01.png" style="width:100%">
+                <div class="text">TEXTO DESCRIPCION IMG 1</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="IMG_CUESTIONARIO_02.png" style="width:100%">
+                <div class="text">TEXTO DESCRIPCION IMG 2</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="IMG_CUESTIONARIO_03.png" style="width:100%">
+                <div class="text">TEXTO DESCRIPCION IMG 3</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div> <!--Texto en la parte superior para hacer referencia en que imagen se esta / contador-->
+                <img src="IMG_CUESTIONARIO_04.png" style="width:100%"> <!--Imagen con el ancho al 100%-->
+                <div class="text">TEXTO DESCRIPCION IMG 4</div> <!--Texto alternativo interior-->
+            </div>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!--&#10094; es para añadir el caracter de anterior-->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+        <br>
+            
+        <div style="text-align:center">  <!--Sirve para los enlaces tipo boton en la parte inferior-->
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
